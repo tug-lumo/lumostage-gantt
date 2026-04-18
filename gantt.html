@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lumostage — BC Production Schedule</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --dark:#0d1117;--surface:#161c24;--raised:#1e2733;--border:#243040;
+  --blue:#0060fe;--deep:#144ba0;--seafoam:#00efea;--salmon:#ff6169;
+  --white:#fff;--text:#e8edf2;--mid:#7a8ea8;--dim:#3d5068;
+  --c-feature:#f5a623;--c-tvseries:#0060fe;--c-tvmovie:#00efea;
+  --c-tvpilot:#9b7fff;--c-mini:#ff8c42;--c-doc:#4cde9a;
+  --c-reality:#ff6169;--c-newmedia:#c47eff;--c-short:#ffce5a;
+  --c-other:#607080;--c-rumour:#2d3f55;
+  --row-h:46px;--label-w:270px;--hdr-h:68px;--tick-h:34px;
+}
+body{background:var(--dark);color:var(--text);font-family:'Barlow',sans-serif;font-size:14px;min-height:100vh;overflow-x:hidden}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:100;background:var(--surface);border-bottom:2px solid var(--blue);display:flex;align-items:center;gap:18px;padding:0 24px;height:var(--hdr-h)}
+.logo{width:38px;height:38px;flex-shrink:0}
+.titles h1{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:21px;letter-spacing:.1em;text-transform:uppercase;color:var(--white);line-height:1}
+.titles p{font-size:11px;color:var(--mid);letter-spacing:.06em;text-transform:uppercase;margin-top:3px}
+.hdr-gap{flex:1}
+.controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.fg{display:flex;align-items:center;gap:7px}
+.fg label{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--mid)}
+select{background:var(--raised);border:1px solid var(--border);color:var(--text);font-family:'Barlow',sans-serif;font-size:13px;padding:5px 10px;border-radius:4px;cursor:pointer;outline:none;transition:border-color .15s}
+select:focus{border-color:var(--blue)}
+.pill{background:var(--raised);border:1px solid var(--border);border-radius:4px;padding:5px 12px;font-size:12px;color:var(--mid);white-space:nowrap}
+.pill strong{color:var(--seafoam);font-weight:600}
+.zbtn{background:var(--raised);border:1px solid var(--border);color:var(--text);width:28px;height:28px;border-radius:4px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;transition:background .15s}
+.zbtn:hover{background:var(--border)}
+.updated-lbl{font-size:11px;color:var(--dim)}
+
+/* States */
+.state{display:flex;flex-direction:column;align-items:center;justify-content:center;height:60vh;gap:16px;color:var(--mid)}
+.spinner{width:36px;height:36px;border:3px solid var(--border);border-top-color:var(--blue);border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.state.err .spinner{border-top-color:var(--salmon)}
+.state.err p{color:var(--salmon);max-width:480px;text-align:center;line-height:1.6}
+
+/* Legend */
+.legend{display:flex;align-items:center;gap:14px;padding:8px 24px;border-bottom:1px solid var(--border);flex-wrap:wrap;background:var(--surface)}
+.leg{display:flex;align-items:center;gap:6px;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--mid);cursor:pointer;transition:color .15s;user-select:none}
+.leg:hover{color:var(--text)}
+.leg.off{opacity:.25}
+.swatch{width:11px;height:11px;border-radius:2px;flex-shrink:0}
+
+/* Gantt layout */
+.gantt-outer{display:flex;overflow:hidden}
+.g-labels{width:var(--label-w);flex-shrink:0;border-right:1px solid var(--border);background:var(--surface);z-index:10}
+.label-hdr{height:var(--tick-h);border-bottom:1px solid var(--border);padding:0 14px;display:flex;align-items:center;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--dim)}
+.label-row{height:var(--row-h);display:flex;align-items:center;padding:0 14px;border-bottom:1px solid var(--border);gap:9px;cursor:default;transition:background .1s}
+.label-row:hover{background:var(--raised)}
+.label-row.rumour{opacity:.5}
+.dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.label-text{flex:1;min-width:0}
+.l-title{font-size:13px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--text)}
+.l-sub{font-size:11px;color:var(--mid);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+.g-scroll{flex:1;overflow-x:auto;overflow-y:hidden}
+.g-scroll::-webkit-scrollbar{height:5px}
+.g-scroll::-webkit-scrollbar-track{background:var(--surface)}
+.g-scroll::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+.g-canvas{position:relative;height:fit-content}
+
+/* Ticks */
+.tick-hdr{position:sticky;top:0;z-index:5;height:var(--tick-h);background:var(--surface);border-bottom:1px solid var(--border);overflow:hidden}
+.tick{position:absolute;top:0;height:100%;border-left:1px solid var(--border);display:flex;align-items:center;padding-left:6px;font-size:11px;font-family:'Barlow Condensed',sans-serif;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--mid);white-space:nowrap}
+.tick.q{color:var(--text);border-left-color:#2d4060}
+
+/* Rows & bars */
+.g-row{height:var(--row-h);position:relative;border-bottom:1px solid var(--border);transition:background .1s}
+.g-row:hover{background:rgba(255,255,255,.025)}
+.grid-line{position:absolute;top:0;bottom:0;border-left:1px solid var(--border)}
+.grid-line.q{border-left-color:#2d4060}
+.today-line{position:absolute;top:0;bottom:0;width:2px;background:var(--seafoam);z-index:4;pointer-events:none}
+.today-lbl{position:absolute;top:0;transform:translateX(-50%);background:var(--seafoam);color:var(--dark);font-size:9px;font-weight:700;letter-spacing:.06em;padding:2px 5px;border-radius:0 0 3px 3px;white-space:nowrap;pointer-events:none}
+.bar{position:absolute;top:50%;transform:translateY(-50%);height:26px;min-width:4px;border-radius:4px;cursor:pointer;transition:filter .12s,transform .12s;display:flex;align-items:center;overflow:hidden}
+.bar:hover{filter:brightness(1.3);transform:translateY(-50%) scaleY(1.1);z-index:3}
+.bar-lbl{padding:0 8px;font-size:11px;font-weight:600;font-family:'Barlow Condensed',sans-serif;letter-spacing:.03em;color:rgba(0,0,0,.8);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;pointer-events:none}
+.bar.rumour{opacity:.4;background-image:repeating-linear-gradient(45deg,transparent,transparent 4px,rgba(255,255,255,.15) 4px,rgba(255,255,255,.15) 8px)!important}
+.bar-pin{position:absolute;top:50%;transform:translateY(-50%);width:2px;height:16px;background:var(--mid);border-radius:1px}
+@keyframes barIn{from{transform:translateY(-50%) scaleX(0);opacity:0}to{transform:translateY(-50%) scaleX(1);opacity:1}}
+.bar.anim{animation:barIn .38s cubic-bezier(.22,.68,0,1.2) both;transform-origin:left center}
+
+/* Tooltip */
+#tip{position:fixed;z-index:999;pointer-events:none;background:var(--raised);border:1px solid var(--border);border-radius:8px;padding:14px 16px;min-width:240px;max-width:320px;box-shadow:0 8px 32px rgba(0,0,0,.65);opacity:0;transition:opacity .1s}
+#tip.on{opacity:1}
+.tip-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;color:var(--white);margin-bottom:9px;line-height:1.2}
+.tip-row{display:flex;gap:9px;margin-bottom:4px;font-size:12px}
+.tip-lbl{color:var(--mid);min-width:88px}
+.tip-val{color:var(--text);flex:1}
+.badge{display:inline-block;padding:2px 7px;border-radius:3px;font-size:10px;font-weight:700;font-family:'Barlow Condensed',sans-serif;letter-spacing:.05em;text-transform:uppercase;margin-top:7px}
+
+footer{text-align:center;padding:18px 24px;font-size:11px;color:var(--dim);border-top:1px solid var(--border);margin-top:8px}
+footer a{color:var(--blue);text-decoration:none}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <svg class="logo" viewBox="0 0 100 100" fill="none">
+    <defs>
+      <linearGradient id="lg" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#00EFEA"/>
+        <stop offset="100%" stop-color="#0060FE"/>
+      </linearGradient>
+    </defs>
+    <path d="M72 20 Q82 28 82 50 Q82 72 72 80 L58 68 Q66 62 66 50 Q66 38 58 32 Z" fill="url(#lg)"/>
+    <path d="M58 32 Q50 26 38 26 L38 44 Q46 44 50 50 L38 56 L38 74 Q50 74 58 68 L72 80 Q60 90 38 90 L20 90 L20 10 L38 10 Q60 10 72 20 Z" fill="#0060FE"/>
+  </svg>
+  <div class="titles">
+    <h1>Lumostage</h1>
+    <p>BC Production Schedule</p>
+  </div>
+  <div class="hdr-gap"></div>
+  <div class="controls">
+    <div class="fg"><label>Type</label><select id="fType"><option value="">All types</option></select></div>
+    <div class="fg"><label>Status</label>
+      <select id="fStatus">
+        <option value="">All</option>
+        <option value="ACTIVE">Active</option>
+        <option value="RUMOUR">Rumour</option>
+      </select>
+    </div>
+    <div style="display:flex;gap:5px">
+      <button class="zbtn" onclick="zoom(-1.5)" title="Zoom out">−</button>
+      <button class="zbtn" onclick="zoom(+1.5)" title="Zoom in">+</button>
+    </div>
+    <div class="pill" id="pill">—</div>
+    <div class="updated-lbl" id="upd"></div>
+  </div>
+</header>
+
+<div class="state" id="sLoad"><div class="spinner"></div><p>Loading production data…</p></div>
+<div class="state err" id="sErr" style="display:none"><div class="spinner"></div><p id="errMsg"></p></div>
+
+<div id="main" style="display:none">
+  <div class="legend" id="legend"></div>
+  <div class="gantt-outer">
+    <div class="g-labels" id="gLabels"></div>
+    <div class="g-scroll" id="gScroll">
+      <div class="g-canvas" id="gCanvas"></div>
+    </div>
+  </div>
+  <footer>
+    Lumostage Virtual Production &nbsp;&middot;&nbsp; Creative BC · DGC BC · ICG 669
+    &nbsp;&middot;&nbsp; <a href="https://lumostage.com" target="_blank">lumostage.com</a>
+  </footer>
+</div>
+
+<div id="tip"></div>
+
+<script>
+let PPD = 5;
+const TC = {
+  'Feature':'#f5a623','TV Series':'#0060fe','TV Movie':'#00efea',
+  'TV Pilot':'#9b7fff','Mini Series':'#ff8c42','Documentary Feature':'#4cde9a',
+  'Doc Series':'#4cde9a','Reality/Lifestyle':'#ff6169',
+  'New Media Series':'#c47eff','Series (New Media)':'#c47eff',
+  'Feature (New Media)':'#c47eff','TV Movie (New Media)':'#c47eff',
+  'Short Film':'#ffce5a'
+};
+const tc   = t => TC[t]||'#607080';
+const pd   = s => s ? new Date(s+'T00:00:00') : null;
+const diff = (a,b) => Math.round((b-a)/86400000);
+const fmtd = d => d ? d.toLocaleDateString('en-CA',{month:'short',day:'numeric',year:'numeric'}) : '—';
+const esc  = s => String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+
+let allProds=[], activeTypes=new Set(['__all']);
+
+async function init() {
+  try {
+    const res = await fetch('data.json?t='+Date.now());
+    if (!res.ok) throw new Error('HTTP '+res.status+' — check data.json exists in the repo root');
+    const json = await res.json();
+    allProds = (json.productions||[]).filter(p=>p.title);
+    document.getElementById('upd').textContent = json.updated ? 'Updated '+json.updated : '';
+    render();
+    show('main');
+  } catch(e) {
+    document.getElementById('errMsg').textContent = 'Could not load data.json. '+e.message;
+    show('sErr');
+  }
+}
+
+function show(id) {
+  ['sLoad','sErr','main'].forEach(i =>
+    document.getElementById(i).style.display = i===id ? '' : 'none');
+}
+
+function filtered() {
+  const ft=document.getElementById('fType').value;
+  const fs=document.getElementById('fStatus').value;
+  return allProds.filter(p=>{
+    if (ft && p.type!==ft) return false;
+    if (fs && (p.status||'').toUpperCase()!==fs) return false;
+    if (!activeTypes.has('__all') && !activeTypes.has(p.type)) return false;
+    return true;
+  });
+}
+
+function zoom(d){ PPD=Math.max(2,Math.min(22,PPD+d)); renderGantt(filtered()); }
+
+function render() {
+  const types=[...new Set(allProds.map(p=>p.type).filter(Boolean))].sort();
+  const sel=document.getElementById('fType');
+  sel.innerHTML='<option value="">All types</option>';
+  types.forEach(t=>{ const o=document.createElement('option'); o.value=t; o.textContent=t; sel.appendChild(o); });
+
+  activeTypes=new Set(['__all']);
+  const legend=document.getElementById('legend');
+  legend.innerHTML='';
+  types.forEach(t=>{
+    const el=document.createElement('div'); el.className='leg'; el.dataset.type=t;
+    el.innerHTML=`<span class="swatch" style="background:${tc(t)}"></span>${t}`;
+    el.onclick=()=>toggleType(t);
+    legend.appendChild(el);
+  });
+  const rEl=document.createElement('div'); rEl.className='leg';
+  rEl.innerHTML='<span class="swatch" style="background:var(--c-rumour)"></span>Rumour';
+  legend.appendChild(rEl);
+
+  document.getElementById('fType').onchange  = ()=>renderGantt(filtered());
+  document.getElementById('fStatus').onchange = ()=>renderGantt(filtered());
+  renderGantt(filtered());
+}
+
+function toggleType(t) {
+  if (activeTypes.has('__all')) { activeTypes=new Set([t]); }
+  else if (activeTypes.has(t)) { activeTypes.delete(t); if (!activeTypes.size) activeTypes=new Set(['__all']); }
+  else { activeTypes.add(t); }
+  document.querySelectorAll('.leg[data-type]').forEach(e=>
+    e.classList.toggle('off',!activeTypes.has('__all')&&!activeTypes.has(e.dataset.type)));
+  renderGantt(filtered());
+}
+
+function renderGantt(prods) {
+  const sorted=[...prods].sort((a,b)=>{
+    const da=pd(a.start),db=pd(b.start);
+    if(!da&&!db)return 0; if(!da)return 1; if(!db)return -1; return da-db;
+  });
+
+  const starts=sorted.map(p=>pd(p.start)).filter(Boolean);
+  const ends  =sorted.map(p=>pd(p.end)).filter(Boolean);
+  if (!starts.length) { document.getElementById('gLabels').innerHTML=''; document.getElementById('gCanvas').innerHTML=''; return; }
+
+  const rS=new Date(Math.min(...starts)); rS.setDate(rS.getDate()-28);
+  const rE=new Date(Math.max(...ends,...starts)); rE.setDate(rE.getDate()+28);
+  const W=diff(rS,rE)*PPD;
+
+  document.getElementById('pill').innerHTML=`<strong>${sorted.length}</strong> shown &nbsp;&middot;&nbsp; <strong>${starts.length}</strong> scheduled`;
+
+  // Labels
+  const gL=document.getElementById('gLabels');
+  gL.innerHTML='<div class="label-hdr">Production</div>';
+  sorted.forEach(p=>{
+    const rum=(p.status||'').toUpperCase()==='RUMOUR';
+    const d=document.createElement('div'); d.className='label-row'+(rum?' rumour':'');
+    d.innerHTML=`<span class="dot" style="background:${tc(p.type)}"></span><div class="label-text"><div class="l-title" title="${esc(p.title)}">${esc(p.title)}</div><div class="l-sub">${esc(p.company||p.type||'')}</div></div>`;
+    gL.appendChild(d);
+  });
+
+  // Canvas
+  const cv=document.getElementById('gCanvas');
+  cv.style.width=W+'px'; cv.innerHTML='';
+
+  // Tick header
+  const th=document.createElement('div'); th.className='tick-hdr'; th.style.width=W+'px';
+  ticks(th,rS,rE,W); cv.appendChild(th);
+
+  // Today
+  const now=new Date();
+  if(now>=rS&&now<=rE){
+    const tx=diff(rS,now)*PPD;
+    const tl=document.createElement('div'); tl.className='today-line';
+    tl.style.cssText=`left:${tx}px;height:${sorted.length*46+34}px`; cv.appendChild(tl);
+    const tlb=document.createElement('div'); tlb.className='today-lbl'; tlb.textContent='TODAY';
+    tlb.style.left=tx+'px'; cv.appendChild(tlb);
+  }
+
+  // Rows
+  sorted.forEach((p,idx)=>{
+    const rum=(p.status||'').toUpperCase()==='RUMOUR';
+    const row=document.createElement('div'); row.className='g-row'; row.style.width=W+'px';
+    gridLines(row,rS,rE);
+    const s=pd(p.start),e=pd(p.end);
+    if(s&&e&&e>=s){
+      const x=diff(rS,s)*PPD, w=Math.max(4,diff(s,e)*PPD);
+      const bar=document.createElement('div');
+      bar.className='bar anim'+(rum?' rumour':'');
+      bar.style.cssText=`left:${x}px;width:${w}px;background:${rum?'#2d3f55':tc(p.type)};animation-delay:${idx*14}ms`;
+      if(w>50){const bl=document.createElement('span');bl.className='bar-lbl';bl.textContent=p.title;bar.appendChild(bl);}
+      bar.addEventListener('mouseenter',ev=>showTip(ev,p));
+      bar.addEventListener('mousemove', ev=>moveTip(ev));
+      bar.addEventListener('mouseleave',hideTip);
+      row.appendChild(bar);
+    } else if(s){
+      const pin=document.createElement('div'); pin.className='bar-pin'; pin.style.left=diff(rS,s)*PPD+'px'; row.appendChild(pin);
+    }
+    cv.appendChild(row);
+  });
+}
+
+function ticks(cont,rS,rE,W){
+  const c=new Date(rS); c.setDate(1);
+  while(c<=rE){
+    const x=diff(rS,c)*PPD, isQ=c.getMonth()%3===0;
+    const el=document.createElement('div'); el.className='tick'+(isQ?' q':''); el.style.left=x+'px';
+    el.textContent=isQ?c.toLocaleDateString('en-US',{month:'short'})+' '+c.getFullYear():c.toLocaleDateString('en-US',{month:'short'});
+    cont.appendChild(el); c.setMonth(c.getMonth()+1);
+  }
+}
+function gridLines(row,rS,rE){
+  const c=new Date(rS); c.setDate(1);
+  while(c<=rE){
+    const gl=document.createElement('div'); gl.className='grid-line'+(c.getMonth()%3===0?' q':'');
+    gl.style.left=diff(rS,c)*PPD+'px'; row.appendChild(gl); c.setMonth(c.getMonth()+1);
+  }
+}
+
+// Tooltip
+const tip=document.getElementById('tip');
+function showTip(ev,p){
+  const dur=p.start&&p.end?diff(pd(p.start),pd(p.end))+' days':'—';
+  const rum=(p.status||'').toUpperCase()==='RUMOUR';
+  const rows=[['Company',p.company],['Type',p.type],['Camera',fmtd(pd(p.start))],['Wrap',fmtd(pd(p.end))],['Duration',dur],['Director',p.director],['PM',p.productionManager],['Producer',p.producer],['Sources',p.sources]].filter(r=>r[1]);
+  tip.innerHTML=`<div class="tip-title">${esc(p.title)}</div>${rows.map(r=>`<div class="tip-row"><span class="tip-lbl">${r[0]}</span><span class="tip-val">${esc(r[1])}</span></div>`).join('')}${rum?`<span class="badge" style="background:var(--c-rumour);color:#aaa">Rumour</span>`:''}`;
+  moveTip(ev); tip.classList.add('on');
+}
+function moveTip(ev){
+  const m=14,tw=tip.offsetWidth,th=tip.offsetHeight;
+  let x=ev.clientX+m,y=ev.clientY+m;
+  if(x+tw>innerWidth-m)x=ev.clientX-tw-m;
+  if(y+th>innerHeight-m)y=ev.clientY-th-m;
+  tip.style.left=x+'px'; tip.style.top=y+'px';
+}
+function hideTip(){ tip.classList.remove('on'); }
+
+init();
+</script>
+</body>
+</html>

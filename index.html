@@ -298,7 +298,7 @@ footer a{color:var(--blue);text-decoration:none}
 <div id="tip"></div>
 
 <!-- Detail sheet -->
-<div class="sh-bg" id="shBg" onclick="closeSheet()"></div>
+<div class="sh-bg" id="shBg"></div>
 <div class="sheet" id="sheet"><div class="sh-handle"></div><div id="shBody"></div></div>
 
 <!-- Filter drawer (mobile) -->
@@ -503,8 +503,8 @@ function renderGantt(prods) {
     // Tap detection (passive — never blocks scroll)
     row.addEventListener('touchstart', onTouchStart, {passive:true});
     row.addEventListener('touchend', ev=>{ if(isTap(ev)) showSheet(p); }, {passive:true});
-    // Desktop click
-    row.addEventListener('click', ()=>{ if(!mob()) showSheet(p); });
+    // click handles desktop AND the 300ms synthetic-click on mobile (guarded by sheetOpenedAt)
+    row.addEventListener('click', ()=>showSheet(p));
     gl.appendChild(row);
   });
 
@@ -605,7 +605,12 @@ function moveTip(ev){
 function hideTip(){tip.classList.remove('on');}
 
 // ── BOTTOM SHEET ──────────────────────────────────────────
+// Sheet open timestamp — used to swallow the synthetic click that browsers fire
+// ~300ms after a touchend, which would otherwise immediately close the sheet.
+let sheetOpenedAt = 0;
+
 function showSheet(p){
+  sheetOpenedAt = Date.now();
   const rum=(p.status||'').toUpperCase()==='RUMOUR';
   const s=pd(p.start),e=pd(p.end);
   const dur=s&&e?diff(s,e)+' days':'—';
@@ -641,6 +646,7 @@ function showSheet(p){
   document.body.style.overflow='hidden';
 }
 function closeSheet(){
+  if (Date.now() - sheetOpenedAt < 400) return; // swallow synthetic post-touch click
   document.getElementById('sheet').classList.remove('on');
   document.getElementById('shBg').classList.remove('on');
   document.body.style.overflow='';
@@ -684,6 +690,10 @@ function renderCards(prods){
 }
 
 document.addEventListener('keydown',e=>{ if(e.key==='Escape'){closeSheet();closeFd();} });
+
+// Wire overlay dismissals here (not inline onclick) so closeSheet's guard applies
+document.getElementById('shBg').addEventListener('click', closeSheet);
+document.getElementById('shBg').addEventListener('touchend', ev=>{ if(isTap(ev)) closeSheet(); }, {passive:true});
 
 init();
 </script>

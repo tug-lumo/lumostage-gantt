@@ -1,6 +1,6 @@
 {
-  "updated": "2026-06-01 18:45 UTC",
-  "count": 72,
+  "updated": "2026-06-09 18:34 UTC",
+  "count": 77,
   "productions": [
     {
       "title": "Tracker - Season 3 [TV Series]",
@@ -25,7 +25,7 @@
       "needsReview": "",
       "reviewNotes": "wrapped, contact_match_review",
       "localCompany": "20th Television",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "UNTITLED HOCKEY PROJECT - Season 1 [TV Series/New Media]",
@@ -50,7 +50,7 @@
       "needsReview": "",
       "reviewNotes": "wrapped, contact_match_review, manually_merged_from: Untitled 21 Laps Hockey Project - Season 1 [TV Series]",
       "localCompany": "Icefields Productions, ULC",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "The Exiled [Feature]",
@@ -75,7 +75,7 @@
       "needsReview": "",
       "reviewNotes": "wrapped, contact_match_review",
       "localCompany": "Triple Island Films Inc.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "CATEGORY 10 - Season 2 [New Media Series]",
@@ -94,13 +94,13 @@
       "executiveProducer": "Justin Marks",
       "email": "category10office@gmail.com",
       "phone": "(236) 520-6300",
-      "address": "",
+      "address": "Bridge Studios - Lake City | 3333 Lake City Way, Burnaby, BC, V5A 3A3",
       "sourceType": "MASTER",
       "sources": "Creative BC | DGC BC | ICG 669 Active, ProdPro",
       "needsReview": "YES",
       "reviewNotes": "merged_from_multiple_sources, in_production, source_flagged_review, contact_match_review, manually_merged_from: Shogun - Season 2 [TV Series]",
       "localCompany": "SL5 D",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "Cowgirl for Christmas [Feature]",
@@ -125,7 +125,7 @@
       "needsReview": "",
       "reviewNotes": "wrapped",
       "localCompany": "Polyscope Productions",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "Stonechild - Season 1 [Mini-Series]",
@@ -150,7 +150,7 @@
       "needsReview": "",
       "reviewNotes": "wrapped, contact_match_review",
       "localCompany": "Pikohowin Productions Inc.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "MURDER IN A SMALL TOWN - Season 3 [TV Series]",
@@ -175,7 +175,7 @@
       "needsReview": "",
       "reviewNotes": "merged_from_multiple_sources, in_production, contact_match_review",
       "localCompany": "Alberg Productions S3 Inc.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "YELLOWJACKETS - Season 4 [TV Series]",
@@ -200,7 +200,7 @@
       "needsReview": "",
       "reviewNotes": "merged_from_multiple_sources, in_production, contact_match_review",
       "localCompany": "Yellowjackets 4 Productions BC Inc.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "ANAHEIM REALM - Season 1 [New Media Series]",
@@ -219,38 +219,13 @@
       "executiveProducer": "Ronald Moore",
       "email": "anaheimrealmproductionoffice@gmail.com",
       "phone": "(604) 453-4970",
-      "address": "Vancouver, British Columbia, Canada",
+      "address": "Vancouver Film Studios | 3500 Cornett Road, 3rd Floor, Vancouver, BC, V5M 2H5",
       "sourceType": "MASTER",
       "sources": "Creative BC | DGC BC | ICG 669 Active, ProdPro",
       "needsReview": "YES",
       "reviewNotes": "merged_from_multiple_sources, in_production, source_flagged_review, contact_match_review, manually_merged_from: God of War - Season 1 [TV Series]",
       "localCompany": "Pico Productions (BC) Limited",
-      "scrapedAt": "2026-06-01T18:36:33Z"
-    },
-    {
-      "title": "CALM CURRENT - Season 3 [New Media Series]",
-      "company": "Bear and Pear Productions, Inc.",
-      "type": "New Media Series",
-      "status": "ACTIVE",
-      "start": "2026-03-02",
-      "end": "2026-11-27",
-      "rawSchedule": "3/2/2026 - 11/27/2026",
-      "director": "Craig Mazin",
-      "productionManager": "Lynne Bespflug",
-      "producer": "LeeAnn Stonebreaker",
-      "productionCoordinator": "Corine Buffel",
-      "unitManager": "Zachary Marchand",
-      "locationManager": "Nicole Chartrand",
-      "executiveProducer": "Brent Cecil O'Connor",
-      "email": "calmcurrentprod@hboprod.com",
-      "phone": "(236) 520-6100",
-      "address": "3333 Lake City Way, Burnaby, Canada, V5A 3A3",
-      "sourceType": "MASTER",
-      "sources": "Creative BC | DGC BC, ICG 669 Active | ProdPro",
-      "needsReview": "YES",
-      "reviewNotes": "merged_from_multiple_sources, in_production, source_flagged_review, contact_match_review, real_title_from_prodpro:The Last of Us - Season 3, manually_merged_from: Calm Current (The Last of Us - Season 3) [New Media Series]",
-      "localCompany": "Bear and Pear Productions, Inc.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "HILLCREST ROAD - Season 2 [New Media Series]",
@@ -275,7 +250,32 @@
       "needsReview": "YES",
       "reviewNotes": "merged_from_multiple_sources, in_production, source_flagged_review, contact_match_review, manually_merged_from: Elle - Season 2 [TV Series]",
       "localCompany": "Reunion Snap Productions Inc.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
+    },
+    {
+      "title": "The Last of Us - Season 3 [TV Series]",
+      "company": "HBO",
+      "type": "TV Series",
+      "status": "ACTIVE",
+      "start": "2026-03-02",
+      "end": "2026-11-27",
+      "rawSchedule": "Shoot: 2026-03-02 | Wrap: 2026-11-27",
+      "director": "Craig Mazin",
+      "productionManager": "Lynne Bespflug",
+      "producer": "Greg Spence",
+      "productionCoordinator": "Corine Buffel",
+      "unitManager": "Zachary Marchand",
+      "locationManager": "Nicole Noelle Chartrand",
+      "executiveProducer": "Craig Mazin",
+      "email": "calmcurrentprod@hboprod.com",
+      "phone": "+1 236-520-6100",
+      "address": "Burnaby, British Columbia, Canada",
+      "sourceType": "MASTER",
+      "sources": "ProdPro, Creative BC | DGC BC, ICG 669 Active",
+      "needsReview": "YES",
+      "reviewNotes": "in_production, contact_match_review, merged_from_multiple_sources, source_flagged_review, manually_merged_from: Calm Current [New Media Series], manually_merged_from: CALM CURRENT - Season 3 [New Media Series]",
+      "localCompany": "HBO",
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "Faraday [Feature]",
@@ -300,7 +300,7 @@
       "needsReview": "",
       "reviewNotes": "wrapped, contact_match_review",
       "localCompany": "Blumhouse",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "Coppermine [Feature]",
@@ -325,7 +325,7 @@
       "needsReview": "",
       "reviewNotes": "in_production",
       "localCompany": "White Bear Films",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "Our Daughter Has Disappeared: the Susan Cox Powell Story [TV Movie]",
@@ -350,7 +350,7 @@
       "needsReview": "",
       "reviewNotes": "wrapped, contact_match_review",
       "localCompany": "CMW Autumn Productions",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "PHONY - Season 1 [TV Series/New Media]",
@@ -375,7 +375,7 @@
       "needsReview": "",
       "reviewNotes": "merged_from_multiple_sources, wrapped, contact_match_review",
       "localCompany": "Stage 49 Ltd.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "Texas Two Step [TV Movie]",
@@ -400,7 +400,7 @@
       "needsReview": "",
       "reviewNotes": "wrapped",
       "localCompany": "Lighthouse Pictures",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "Double Con Christmas [TV Movie]",
@@ -425,7 +425,7 @@
       "needsReview": "",
       "reviewNotes": "wrapped, contact_match_review",
       "localCompany": "10261296 Manitoba Inc",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "The Christmas Loop [TV Movie]",
@@ -450,7 +450,7 @@
       "needsReview": "",
       "reviewNotes": "wrapped, contact_match_review",
       "localCompany": "Lighthouse Pictures",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "The Love Heist [TV Movie]",
@@ -475,7 +475,7 @@
       "needsReview": "",
       "reviewNotes": "wrapped, contact_match_review",
       "localCompany": "Reckless Pictures",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "WHITE ELEPHANT [Feature Length]",
@@ -500,7 +500,7 @@
       "needsReview": "",
       "reviewNotes": "merged_from_multiple_sources, wrapped, contact_match_review",
       "localCompany": "Scratch That CAN Productions Inc.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "Time Out [Feature]",
@@ -525,7 +525,7 @@
       "needsReview": "",
       "reviewNotes": "wrapped, contact_match_review, manually_merged_from: TIME OUT [Feature]",
       "localCompany": "Netflix Studios",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "Sundowning [Feature]",
@@ -550,7 +550,7 @@
       "needsReview": "",
       "reviewNotes": "wrapped, contact_match_review",
       "localCompany": "Spooky Pictures",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "Alien Boy [Feature]",
@@ -561,21 +561,21 @@
       "end": "2026-07-31",
       "rawSchedule": "Shoot: 2026-04-13",
       "director": "Fawaz Al-Matrouk",
-      "productionManager": "",
+      "productionManager": "Jaclyne Bohn",
       "producer": "Anand Ramayya",
-      "productionCoordinator": "",
+      "productionCoordinator": "Laurie Peterson",
       "unitManager": "",
       "locationManager": "",
       "executiveProducer": "Waleed Zuaiter",
       "email": "",
       "phone": "",
-      "address": "",
+      "address": "1831 College Avenue, Regina, SK, S4P 4V5",
       "sourceType": "MASTER",
       "sources": "ProdPro, ICG 669 Active",
       "needsReview": "",
       "reviewNotes": "missing_schedule, in_production, contact_match_review, manually_merged_from: Alien Boy [Feature Lb]",
       "localCompany": "Echo Lake Entertainment",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "Dentist to Die For [TV Movie]",
@@ -600,7 +600,7 @@
       "needsReview": "",
       "reviewNotes": "wrapped, contact_match_review",
       "localCompany": "Qube Film Inc",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "VIRGIN RIVER - Season 8 [New Media Series]",
@@ -619,13 +619,13 @@
       "executiveProducer": "Sean Smith",
       "email": "vrs8office@gmail.com",
       "phone": "(604) 558-6110",
-      "address": "Burnaby, British Columbia, Canada",
+      "address": "Richmond, BC, V6W 1J5",
       "sourceType": "MASTER",
       "sources": "Creative BC | DGC BC | ICG 669 Active | ProdPro",
       "needsReview": "YES",
       "reviewNotes": "merged_from_multiple_sources, in_production, source_flagged_review, contact_match_review",
       "localCompany": "Sea to Sea Productions ULC",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "SIDELINED 3: TOUCHDOWN [TV Movie/New Media]",
@@ -650,7 +650,7 @@
       "needsReview": "",
       "reviewNotes": "wrapped, contact_match_review, manually_merged_from: Sidelined 3 [Feature]",
       "localCompany": "Blue Ant Sidelined 3 Productions Inc.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "Denise Sans Denis [Feature]",
@@ -673,9 +673,9 @@
       "sourceType": "MASTER",
       "sources": "ProdPro",
       "needsReview": "",
-      "reviewNotes": "in_production, contact_match_review",
+      "reviewNotes": "wrapped, contact_match_review",
       "localCompany": "Wookey Films",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "A COWBOY FOR CHRISTMAS [TV Movie]",
@@ -700,7 +700,7 @@
       "needsReview": "YES",
       "reviewNotes": "merged_from_multiple_sources, wrapped, source_flagged_review, contact_match_review",
       "localCompany": "Cowboy Christmas Production Inc.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "Heartland - Season 20 [TV Series]",
@@ -711,21 +711,21 @@
       "end": "2026-08-31",
       "rawSchedule": "Shoot: 2026-05-04 | Wrap: 2026-08-21",
       "director": "",
-      "productionManager": "",
-      "producer": "Jordy Randall",
-      "productionCoordinator": "",
+      "productionManager": "Pazz Neglia",
+      "producer": "Jess Maldaner",
+      "productionCoordinator": "Joe D’Addetta",
       "unitManager": "",
       "locationManager": "",
       "executiveProducer": "Tom Cox",
       "email": "mail@seven24films.com",
       "phone": "(587) 352-7410",
-      "address": "",
+      "address": "2530 Hochwald Ave SW, Calgary, AB, T3E 7H5",
       "sourceType": "MASTER",
       "sources": "ProdPro | ICG 669 Active",
       "needsReview": "",
-      "reviewNotes": "merged_from_multiple_sources, in_production",
+      "reviewNotes": "merged_from_multiple_sources, in_production, contact_match_review",
       "localCompany": "Seven 24 Films & Dynamo Films for CBC",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "THE MAN WITH TWO FACES [TV Movie]",
@@ -750,7 +750,7 @@
       "needsReview": "",
       "reviewNotes": "wrapped, contact_match_review",
       "localCompany": "CMW Lakeside Productions Inc.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "Acting Good - Season 5 [TV Series]",
@@ -761,21 +761,21 @@
       "end": "2026-07-03",
       "rawSchedule": "Shoot: 2026-05-11 | Wrap: 2026-07-03",
       "director": "Roger Boyer",
-      "productionManager": "Anastasia Geras",
-      "producer": "",
+      "productionManager": "Tasia Geras",
+      "producer": "Tina Keeper",
       "productionCoordinator": "Justina Neepin",
       "unitManager": "",
       "locationManager": "Michael Cowles",
-      "executiveProducer": "",
+      "executiveProducer": "Phyllis Laing",
       "email": "bigmakwapictures@gmail.com",
       "phone": "(204) 956-2777",
-      "address": "",
+      "address": "889 Erin Street, Winnipeg, MB, R3G 2W6",
       "sourceType": "MASTER",
       "sources": "ICG 669 Active | ProdPro",
       "needsReview": "",
       "reviewNotes": "merged_from_multiple_sources, in_production, contact_match_review",
       "localCompany": "Kistikan Pictures Inc. for Bell Media",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "ALPHABET SOUP [TV Pilot]",
@@ -794,13 +794,13 @@
       "executiveProducer": "Jennifer Yale",
       "email": "alphabetsoup.office@wdtvs.com",
       "phone": "(604) 637-1999",
-      "address": "Burnaby, British Columbia, Canada",
+      "address": "Mammoth Studios | 2880 Underhill Avenue, Burnaby, BC, V5A 3C5",
       "sourceType": "MASTER",
       "sources": "Creative BC | DGC BC | ICG 669 Active, ProdPro",
       "needsReview": "YES",
-      "reviewNotes": "merged_from_multiple_sources, in_production, source_flagged_review, contact_match_review, manually_merged_from: The X-files [TV Pilot]",
+      "reviewNotes": "merged_from_multiple_sources, in_production, source_flagged_review, contact_match_review, wrapped, manually_merged_from: The X-files [TV Pilot]",
       "localCompany": "Stage 49 Ltd.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "BLUE SKIES - Season 2 [New Media Series]",
@@ -825,7 +825,7 @@
       "needsReview": "YES",
       "reviewNotes": "merged_from_multiple_sources, in_production, source_flagged_review, contact_match_review",
       "localCompany": "BS2 Productions Inc.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "My Jesus [Feature]",
@@ -850,7 +850,7 @@
       "needsReview": "",
       "reviewNotes": "missing_schedule, in_production",
       "localCompany": "Lionsgate",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "WILL TO WIN [Feature]",
@@ -875,7 +875,7 @@
       "needsReview": "YES",
       "reviewNotes": "wrapped, source_flagged_review",
       "localCompany": "Secondwind Productions Ltd.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "GIRL WHO FELL FROM THE SKY [TV Movie]",
@@ -900,7 +900,7 @@
       "needsReview": "",
       "reviewNotes": "wrapped, contact_match_review",
       "localCompany": "Miracle Survivor Productions",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "Buried in Barstow 2 & 3 [TV Movie]",
@@ -925,7 +925,7 @@
       "needsReview": "",
       "reviewNotes": "in_production",
       "localCompany": "Nomadic Pictures",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "RETURN TO SENDER [TV Movie]",
@@ -934,7 +934,7 @@
       "status": "ACTIVE",
       "start": "2026-05-18",
       "end": "2026-06-05",
-      "rawSchedule": "5/18/2026 - 6/5/2026",
+      "rawSchedule": "May 18 2026 - Jun 05 2026",
       "director": "Eva Tavares",
       "productionManager": "John Prince",
       "producer": "Kim Arnott",
@@ -944,13 +944,13 @@
       "executiveProducer": "",
       "email": "rts.prodoffice@gmail.com",
       "phone": "(604) 628-3150",
-      "address": "2400 Boundary Road, Burnaby, Canada, V5M 3Z3",
+      "address": "2400 Boundary Road, Burnaby, BC, V5M 3Z3",
       "sourceType": "MASTER",
-      "sources": "Creative BC | DGC BC",
+      "sources": "DGC BC",
       "needsReview": "",
-      "reviewNotes": "merged_from_multiple_sources, in_production, contact_match_review",
+      "reviewNotes": "wrapped, contact_match_review",
       "localCompany": "Sender Productions Inc.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "CHRISTMAS IN BLUE DOG VALLEY [TV Movie]",
@@ -959,7 +959,7 @@
       "status": "ACTIVE",
       "start": "2026-05-19",
       "end": "2026-06-08",
-      "rawSchedule": "5/19/2026 - 6/8/2026",
+      "rawSchedule": "May 19 2026 - Jun 08 2026",
       "director": "Kevin Fair",
       "productionManager": "Robyn Wiener",
       "producer": "Robyn Wiener",
@@ -969,13 +969,13 @@
       "executiveProducer": "Aidan Heatley",
       "email": "bdv-productions@recklesspictures.com",
       "phone": "(236) 429-2056",
-      "address": "210 - 7436 Fraser Park Drive, Burnaby, Canada, V5J 5B9",
+      "address": "210 - 7436 Fraser Park Drive, Burnaby, BC, V5J 5B9",
       "sourceType": "MASTER",
-      "sources": "Creative BC | DGC BC",
+      "sources": "DGC BC",
       "needsReview": "",
-      "reviewNotes": "merged_from_multiple_sources, in_production, contact_match_review",
+      "reviewNotes": "wrapped, contact_match_review",
       "localCompany": "BDV Productions Inc.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "MATERNAL ADMISSIONS [TV Movie]",
@@ -984,7 +984,7 @@
       "status": "ACTIVE",
       "start": "2026-05-19",
       "end": "2026-06-06",
-      "rawSchedule": "5/19/2026 - 6/6/2026",
+      "rawSchedule": "May 19 2026 - Jun 06 2026",
       "director": "Greg Beeman",
       "productionManager": "Nigel Williams",
       "producer": "Navid Soofi",
@@ -992,15 +992,15 @@
       "unitManager": "",
       "locationManager": "Matthew Campbell",
       "executiveProducer": "Shelby Stone",
-      "email": "novusmow@gmail.com",
+      "email": "maternalproductions@gmail.com",
       "phone": "(604) 294-1132",
-      "address": "101 - 3876 Norland Avenue, Burnaby, Canada, V5G 4T9",
+      "address": "101 - 3876 Norland Avenue, Burnaby, BC, V5G 4T9",
       "sourceType": "MASTER",
-      "sources": "Creative BC | DGC BC",
+      "sources": "DGC BC",
       "needsReview": "",
-      "reviewNotes": "merged_from_multiple_sources, in_production, contact_match_review",
+      "reviewNotes": "wrapped, contact_match_review",
       "localCompany": "Maternal Productions Inc.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "FALLING INTO PLACE [TV Movie]",
@@ -1025,7 +1025,7 @@
       "needsReview": "YES",
       "reviewNotes": "merged_from_multiple_sources, in_production, source_flagged_review, contact_match_review",
       "localCompany": "Falling Into Place Productions (Van) Inc",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "Saved at Sea [Feature Lb]",
@@ -1035,22 +1035,22 @@
       "start": "2026-05-29",
       "end": "2026-06-05",
       "rawSchedule": "",
-      "director": "",
-      "productionManager": "",
+      "director": "Gabriel Correa",
+      "productionManager": "David Franceschetti",
       "producer": "",
-      "productionCoordinator": "",
+      "productionCoordinator": "Agnija Ozolins",
       "unitManager": "",
       "locationManager": "",
-      "executiveProducer": "",
+      "executiveProducer": "Stan Spry",
       "email": "savedatsea@gmail.com",
       "phone": "",
-      "address": "",
+      "address": "775 Plessis Rd, Winnipeg, MB, R2C 5H1",
       "sourceType": "MASTER",
       "sources": "ICG 669 Active",
       "needsReview": "",
-      "reviewNotes": "in_production",
+      "reviewNotes": "wrapped, contact_match_review",
       "localCompany": "Ames Media Inc for A&E Lifetime",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "SKYLIGHT - Season 2 [New Media Series]",
@@ -1073,9 +1073,9 @@
       "sourceType": "MASTER",
       "sources": "Creative BC | DGC BC | ICG 669 Active, ProdPro",
       "needsReview": "YES",
-      "reviewNotes": "merged_from_multiple_sources, source_flagged_review, contact_match_review, manually_merged_from: Off Campus - Season 2 [TV Series]",
+      "reviewNotes": "merged_from_multiple_sources, in_production, source_flagged_review, contact_match_review, manually_merged_from: Off Campus - Season 2 [TV Series]",
       "localCompany": "OC (Brightlight) Productions Inc.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "The Magnificent Seven - Season 1 [New Media Series]",
@@ -1087,20 +1087,20 @@
       "rawSchedule": "Shoot: 2026-06-01 | Wrap: 2026-09-21",
       "director": "",
       "productionManager": "Mark Montague",
-      "producer": "Donald De Line",
+      "producer": "Brian Dennis",
       "productionCoordinator": "Cameron Chapman",
       "unitManager": "",
       "locationManager": "Ben Owens",
-      "executiveProducer": "Bruce Kaufman",
+      "executiveProducer": "Donald Deline",
       "email": "mag7series@gmail.com",
       "phone": "(403) 212-6094",
-      "address": "Calgary, Alberta, Canada",
+      "address": "#3 - 6999 84th St SE, Calgary, AB, T2C 4T6",
       "sourceType": "MASTER",
       "sources": "ProdPro | ICG 669 Active",
       "needsReview": "",
-      "reviewNotes": "merged_from_multiple_sources, contact_match_review",
+      "reviewNotes": "merged_from_multiple_sources, in_production, contact_match_review",
       "localCompany": "MGM+",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "Tracker - Season 4 [TV Series]",
@@ -1123,9 +1123,9 @@
       "sourceType": "MASTER",
       "sources": "ProdPro",
       "needsReview": "",
-      "reviewNotes": "missing_schedule, contact_match_review",
+      "reviewNotes": "missing_schedule, in_production, contact_match_review",
       "localCompany": "20th Television",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "IDYLLWILD [Feature]",
@@ -1148,9 +1148,9 @@
       "sourceType": "MASTER",
       "sources": "Creative BC | DGC BC | ICG 669 Active",
       "needsReview": "",
-      "reviewNotes": "merged_from_multiple_sources, contact_match_review",
+      "reviewNotes": "merged_from_multiple_sources, in_production, contact_match_review",
       "localCompany": "Dunbar Ranch Productions Ltd.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "Malgré Moi - Season 2 [TV Series]",
@@ -1160,22 +1160,22 @@
       "start": "2026-06-08",
       "end": "2026-07-24",
       "rawSchedule": "",
-      "director": "",
-      "productionManager": "",
-      "producer": "",
-      "productionCoordinator": "",
+      "director": "Maxime Beauchamp",
+      "productionManager": "Boeseya Petre",
+      "producer": "Janelle Wookey",
+      "productionCoordinator": "Brandon Nacionales",
       "unitManager": "",
       "locationManager": "",
       "executiveProducer": "",
       "email": "malgremoiproduction@wookeyfilms.com",
       "phone": "(431) 844-2681",
-      "address": "",
+      "address": "705 - 70 Arthur Street, Winnipeg, MB, R3B 1G7",
       "sourceType": "MASTER",
       "sources": "ICG 669 Active",
       "needsReview": "",
-      "reviewNotes": "",
+      "reviewNotes": "in_production, contact_match_review",
       "localCompany": "Wookey Films Inc.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "Independence - Season 2 [New Media Series]",
@@ -1186,21 +1186,46 @@
       "end": "2026-10-16",
       "rawSchedule": "",
       "director": "",
-      "productionManager": "",
-      "producer": "",
-      "productionCoordinator": "",
+      "productionManager": "Danielle Dumesnil",
+      "producer": "Margy Love",
+      "productionCoordinator": "Travis Lowry",
       "unitManager": "",
       "locationManager": "",
-      "executiveProducer": "",
+      "executiveProducer": "Joy Gorman Wettels",
       "email": "independence.office@mount22prod.com",
       "phone": "(204) 594-0977",
-      "address": "",
+      "address": "1771 Inkster, Winnipeg, MB, R2X 1R3",
       "sourceType": "MASTER",
       "sources": "ICG 669 Active",
       "needsReview": "",
-      "reviewNotes": "",
+      "reviewNotes": "contact_match_review",
       "localCompany": "CBS for Netflix",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
+    },
+    {
+      "title": "FATHER CHRISTMAS [TV Movie]",
+      "company": "GSM She Took an Axe Productions Inc.",
+      "type": "TV Movie",
+      "status": "ACTIVE",
+      "start": "2026-06-12",
+      "end": "2026-07-13",
+      "rawSchedule": "6/12/2026 - 7/3/2026",
+      "director": "Paula Elle",
+      "productionManager": "Michele Futerman",
+      "producer": "Rob Lycar",
+      "productionCoordinator": "Mitch Oliver",
+      "unitManager": "",
+      "locationManager": "Sarah Done",
+      "executiveProducer": "Gemma Martini",
+      "email": "gsm.staa.prod@gmail.com",
+      "phone": "(604) 549-5810",
+      "address": ", Canada",
+      "sourceType": "MASTER",
+      "sources": "Creative BC | ICG 669 Active",
+      "needsReview": "",
+      "reviewNotes": "merged_from_multiple_sources, contact_match_review",
+      "localCompany": "GSM She Took an Axe Productions Inc.",
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "ANIMAL CONTROL - Season 5 [TV Series]",
@@ -1225,7 +1250,7 @@
       "needsReview": "",
       "reviewNotes": "merged_from_multiple_sources, contact_match_review",
       "localCompany": "ACOOTY TV Canada Inc.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "The Horseman [Feature]",
@@ -1235,22 +1260,22 @@
       "start": "2026-06-15",
       "end": "2026-07-15",
       "rawSchedule": "",
-      "director": "",
-      "productionManager": "",
-      "producer": "",
-      "productionCoordinator": "",
+      "director": "Rod Lurie",
+      "productionManager": "Lorenz Augustin",
+      "producer": "Chad Oakes",
+      "productionCoordinator": "Joy Hodgson",
       "unitManager": "",
       "locationManager": "",
-      "executiveProducer": "",
+      "executiveProducer": "Chad Oakes",
       "email": "horsemanprodoffice@gmail.com",
       "phone": "(403) 240-0444",
-      "address": "",
+      "address": "#200, 1324 17 Ave SW, Calgary, AB, T2T 5S8",
       "sourceType": "MASTER",
       "sources": "ICG 669 Active",
       "needsReview": "",
-      "reviewNotes": "",
+      "reviewNotes": "contact_match_review",
       "localCompany": "Nomadic Pictures Corp. for Scripps network",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "THE PATIENT WIFE [TV Movie]",
@@ -1275,7 +1300,7 @@
       "needsReview": "",
       "reviewNotes": "merged_from_multiple_sources, contact_match_review",
       "localCompany": "Patient Productions Inc.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "THE AUDACITY - Season 2 [New Media Series]",
@@ -1283,11 +1308,11 @@
       "type": "New Media Series",
       "status": "ACTIVE",
       "start": "2026-06-16",
-      "end": "2026-09-28",
-      "rawSchedule": "6/16/2026 - 9/28/2026",
+      "end": "2026-09-30",
+      "rawSchedule": "6/16/2026 - 9/30/2026",
       "director": "Daniel Sackheim",
       "productionManager": "Tia Buhl",
-      "producer": "",
+      "producer": "Craig Forrest",
       "productionCoordinator": "Lukasz Madziag",
       "unitManager": "Fiona Winning",
       "locationManager": "Greg Astop",
@@ -1300,12 +1325,12 @@
       "needsReview": "",
       "reviewNotes": "merged_from_multiple_sources, contact_match_review",
       "localCompany": "Voltaire Productions Inc.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
-      "title": "HOW THE COOKIE CRUMBLES [Feature]",
+      "title": "HOW THE COOKIE CRUMBLES [TV Movie]",
       "company": "Cookie Productions BC Ltd.",
-      "type": "Feature",
+      "type": "TV Movie",
       "status": "ACTIVE",
       "start": "2026-06-17",
       "end": "2026-07-15",
@@ -1325,7 +1350,7 @@
       "needsReview": "",
       "reviewNotes": "merged_from_multiple_sources, contact_match_review",
       "localCompany": "Cookie Productions BC Ltd.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "FIRE COUNTRY - Season 5 [TV Series]",
@@ -1350,7 +1375,7 @@
       "needsReview": "",
       "reviewNotes": "merged_from_multiple_sources, contact_match_review",
       "localCompany": "SF Films Inc. dba FC Productions Inc.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "Runaway [Feature Lb]",
@@ -1360,22 +1385,22 @@
       "start": "2026-06-22",
       "end": "2026-07-20",
       "rawSchedule": "",
-      "director": "",
+      "director": "James C. Clayton",
       "productionManager": "",
-      "producer": "",
+      "producer": "Marc Petey",
       "productionCoordinator": "",
       "unitManager": "",
       "locationManager": "",
-      "executiveProducer": "",
+      "executiveProducer": "Evan Tylor",
       "email": "",
       "phone": "",
-      "address": "",
+      "address": "3364 Carmelo Ave, Coquitlam, BC, V6B 0E8",
       "sourceType": "MASTER",
       "sources": "ICG 669 Active",
       "needsReview": "",
-      "reviewNotes": "",
+      "reviewNotes": "contact_match_review",
       "localCompany": "Play By Play Productions Inc",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "THE PROBABILITY OF MIRACLES - Season 1 [New Media Series]",
@@ -1400,7 +1425,7 @@
       "needsReview": "",
       "reviewNotes": "merged_from_multiple_sources, contact_match_review",
       "localCompany": "Water Tower Production Services Inc.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "Single at the Wedding [TV Movie]",
@@ -1411,21 +1436,21 @@
       "end": "2026-07-16",
       "rawSchedule": "",
       "director": "",
-      "productionManager": "",
-      "producer": "",
+      "productionManager": "Drew Scurfield",
+      "producer": "Ian Dimerman",
       "productionCoordinator": "",
       "unitManager": "",
       "locationManager": "",
       "executiveProducer": "",
       "email": "singleatthewedding@gmail.com",
       "phone": "(204) 298-1009",
-      "address": "",
+      "address": "716 Oak Street, Winnipeg, MB, R3M 3R7",
       "sourceType": "MASTER",
       "sources": "ICG 669 Active",
       "needsReview": "",
       "reviewNotes": "",
       "localCompany": "Inferno Pictures for Hallmark",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "Amityville Horror [Feature]",
@@ -1450,7 +1475,32 @@
       "needsReview": "",
       "reviewNotes": "missing_schedule, contact_match_review",
       "localCompany": "Amazon Studios",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
+    },
+    {
+      "title": "BURIED IN BARSTOW 2 & 3 [TV Movie]",
+      "company": "BINB Productions Inc.",
+      "type": "TV Movie",
+      "status": "ACTIVE",
+      "start": "2026-06-29",
+      "end": "2026-08-07",
+      "rawSchedule": "6/29/2026 - 8/7/2026",
+      "director": "Alexandra La Roche",
+      "productionManager": "Morris Chapdelaine",
+      "producer": "Michael Frislev",
+      "productionCoordinator": "Amanda Gaudet",
+      "unitManager": "Darren Robson",
+      "locationManager": "Matheson Kincaid",
+      "executiveProducer": "",
+      "email": "barstowproductionoffice@gmail.com",
+      "phone": "",
+      "address": "2041 Harvey Avenue, Kelowna, Canada, V1Y 6G7",
+      "sourceType": "MASTER",
+      "sources": "Creative BC",
+      "needsReview": "",
+      "reviewNotes": "contact_match_review",
+      "localCompany": "BINB Productions Inc.",
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "FENDER - Season 1 [New Media Series]",
@@ -1466,7 +1516,7 @@
       "productionCoordinator": "Mara Perez",
       "unitManager": "Jenna Irvine",
       "locationManager": "Desiree Young",
-      "executiveProducer": "",
+      "executiveProducer": "Charlie Covell",
       "email": "fenderproductionoffice@gmail.com",
       "phone": "(604) 628-3000",
       "address": "3500 Cornett Road Bld. C, Vancouver, Canada, V5M 2H5",
@@ -1475,7 +1525,7 @@
       "needsReview": "",
       "reviewNotes": "merged_from_multiple_sources, contact_match_review",
       "localCompany": "LIS (Brightlight) Productions Inc.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "The Granville Girls - Season 1 [TV Series]",
@@ -1500,7 +1550,7 @@
       "needsReview": "",
       "reviewNotes": "contact_match_review",
       "localCompany": "Netflix Studios",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "4X4 THE EVENT [Feature]",
@@ -1516,7 +1566,7 @@
       "productionCoordinator": "Erin M. Maguire",
       "unitManager": "Jacob Bailey",
       "locationManager": "",
-      "executiveProducer": "",
+      "executiveProducer": "Jesse Savath",
       "email": "4x4prodoffice@gmail.com",
       "phone": "",
       "address": "301 - 460 Nanaimo Street, Vancouver, Canada, V5L 4W3",
@@ -1525,7 +1575,7 @@
       "needsReview": "",
       "reviewNotes": "merged_from_multiple_sources, contact_match_review",
       "localCompany": "Heist Job Movies Inc.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "DURANGO [TV Pilot]",
@@ -1550,7 +1600,82 @@
       "needsReview": "",
       "reviewNotes": "merged_from_multiple_sources, contact_match_review",
       "localCompany": "Stage 49 Ltd.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
+    },
+    {
+      "title": "White Buzz (aka The Mosquito Bowl) - Additional Photography [Feature]",
+      "company": "Netflix",
+      "type": "Feature",
+      "status": "ACTIVE",
+      "start": "2026-07-09",
+      "end": "2026-07-10",
+      "rawSchedule": "",
+      "director": "",
+      "productionManager": "",
+      "producer": "Alex Gayner",
+      "productionCoordinator": "",
+      "unitManager": "",
+      "locationManager": "",
+      "executiveProducer": "",
+      "email": "",
+      "phone": "",
+      "address": "1200 Waterfront Centre, 200 Burrard St, Vancouver, BC, V7X 1T2",
+      "sourceType": "MASTER",
+      "sources": "ICG 669 Active",
+      "needsReview": "",
+      "reviewNotes": "contact_match_review",
+      "localCompany": "Netflix",
+      "scrapedAt": "2026-06-09T17:45:35Z"
+    },
+    {
+      "title": "ALLEGIANCE - Season 4 [TV Series]",
+      "company": "Scott Road Productions (S4) Inc.",
+      "type": "TV Series",
+      "status": "ACTIVE",
+      "start": "2026-07-13",
+      "end": "2026-10-22",
+      "rawSchedule": "7/13/2026 - 10/22/2026",
+      "director": "",
+      "productionManager": "Simon Richardson",
+      "producer": "",
+      "productionCoordinator": "Rhona Willscroft",
+      "unitManager": "",
+      "locationManager": "",
+      "executiveProducer": "Nicole Mendes",
+      "email": "allegianceproductionoffice@gmail.com",
+      "phone": "(778) 357-0819",
+      "address": "4084 McConnell Court, Burnaby, Canada, V5A 3L8",
+      "sourceType": "MASTER",
+      "sources": "Creative BC | ICG 669 Active",
+      "needsReview": "",
+      "reviewNotes": "merged_from_multiple_sources, contact_match_review",
+      "localCompany": "Scott Road Productions (S4) Inc.",
+      "scrapedAt": "2026-06-09T17:45:35Z"
+    },
+    {
+      "title": "Scrubs - Season 2 [TV Series]",
+      "company": "",
+      "type": "TV Series",
+      "status": "RUMOUR",
+      "start": "2026-07-20",
+      "end": "2026-10-19",
+      "rawSchedule": "",
+      "director": "",
+      "productionManager": "",
+      "producer": "",
+      "productionCoordinator": "",
+      "unitManager": "",
+      "locationManager": "",
+      "executiveProducer": "",
+      "email": "",
+      "phone": "",
+      "address": "Vancouver, BC",
+      "sourceType": "MASTER",
+      "sources": "ICG 669 Rumour",
+      "needsReview": "",
+      "reviewNotes": "missing_company, missing_primary_person, rumour_only",
+      "localCompany": "",
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "Private Eyes - West Coast - Season 2 [TV Series]",
@@ -1561,7 +1686,7 @@
       "end": "2026-09-21",
       "rawSchedule": "",
       "director": "",
-      "productionManager": "",
+      "productionManager": "Catou Kearney",
       "producer": "",
       "productionCoordinator": "",
       "unitManager": "",
@@ -1569,13 +1694,13 @@
       "executiveProducer": "",
       "email": "",
       "phone": "",
-      "address": "",
+      "address": "Victoria, BC",
       "sourceType": "MASTER",
       "sources": "ICG 669 Rumour",
       "needsReview": "",
       "reviewNotes": "missing_company, rumour_only",
       "localCompany": "",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "Ghost Girl [TV Pilot]",
@@ -1586,21 +1711,21 @@
       "end": "2026-08-12",
       "rawSchedule": "",
       "director": "",
-      "productionManager": "",
-      "producer": "",
+      "productionManager": "Steven Merk",
+      "producer": "Lily Hui",
       "productionCoordinator": "",
       "unitManager": "",
       "locationManager": "",
       "executiveProducer": "",
       "email": "",
       "phone": "",
-      "address": "",
+      "address": "Vancouver, BC",
       "sourceType": "MASTER",
       "sources": "ICG 669 Active",
       "needsReview": "",
       "reviewNotes": "",
       "localCompany": "Disney",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "Wildflower [New Media Series]",
@@ -1611,21 +1736,21 @@
       "end": "2026-10-30",
       "rawSchedule": "",
       "director": "",
-      "productionManager": "",
-      "producer": "",
-      "productionCoordinator": "",
+      "productionManager": "Hudson Cooley",
+      "producer": "Leslie Cowan",
+      "productionCoordinator": "Samantha Ferrari",
       "unitManager": "",
       "locationManager": "",
-      "executiveProducer": "",
+      "executiveProducer": "Heidi Cole McAdams",
       "email": "",
       "phone": "",
-      "address": "",
+      "address": "Calgary, AB",
       "sourceType": "MASTER",
       "sources": "ICG 669 Active",
       "needsReview": "",
-      "reviewNotes": "",
+      "reviewNotes": "contact_match_review",
       "localCompany": "Brightlight Pictures Inc. for Amazon Studios",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "EXTRA CREDIT [TV Movie]",
@@ -1650,10 +1775,10 @@
       "needsReview": "YES",
       "reviewNotes": "merged_from_multiple_sources, source_flagged_review, contact_match_review",
       "localCompany": "Bear Claw Productions Ltd.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
-      "title": "THE ROOKIE: NORTH - Season 1 [TV Series]",
+      "title": "MURDER IN A SMALL TOWN - SEASON 3 [TV Series]",
       "company": "Rookie North BC Productions, ULC.",
       "type": "TV Series",
       "status": "ACTIVE",
@@ -1671,11 +1796,36 @@
       "phone": "(604) 901-4079",
       "address": "2880 Underhill Avenue, Burnaby, Canada, V5A 0A2",
       "sourceType": "MASTER",
-      "sources": "Creative BC | DGC BC | ICG 669 Active",
+      "sources": "Creative BC",
+      "needsReview": "",
+      "reviewNotes": "contact_match_review",
+      "localCompany": "Rookie North BC Productions, ULC.",
+      "scrapedAt": "2026-06-09T17:45:35Z"
+    },
+    {
+      "title": "THE ROOKIE: NORTH - Season 1 [TV Series]",
+      "company": "Rookie North BC Productions, ULC.",
+      "type": "TV Series",
+      "status": "ACTIVE",
+      "start": "2026-08-11",
+      "end": "2026-11-23",
+      "rawSchedule": "Aug 11 2026 - Nov 23 2026",
+      "director": "",
+      "productionManager": "Colleen Mitchell",
+      "producer": "",
+      "productionCoordinator": "Jerami Pergel",
+      "unitManager": "",
+      "locationManager": "",
+      "executiveProducer": "Jae Marchant",
+      "email": "rookienorthprodoffice@gmail.com",
+      "phone": "",
+      "address": "2880 Underhill Avenue, Burnaby, BC, V5A 0A2",
+      "sourceType": "MASTER",
+      "sources": "DGC BC | ICG 669 Active",
       "needsReview": "",
       "reviewNotes": "merged_from_multiple_sources, contact_match_review",
       "localCompany": "Rookie North BC Productions, ULC.",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "School Spirits - Season 4 [New Media Series]",
@@ -1686,21 +1836,21 @@
       "end": "2026-11-27",
       "rawSchedule": "",
       "director": "",
-      "productionManager": "",
-      "producer": "",
-      "productionCoordinator": "",
+      "productionManager": "Ian Birkett",
+      "producer": "Joyce Sawa",
+      "productionCoordinator": "Ron Pachkowski",
       "unitManager": "",
       "locationManager": "",
-      "executiveProducer": "",
+      "executiveProducer": "Don Dunn",
       "email": "",
       "phone": "",
-      "address": "",
+      "address": "Vancouver, BC",
       "sourceType": "MASTER",
       "sources": "ICG 669 Active",
       "needsReview": "",
-      "reviewNotes": "",
+      "reviewNotes": "contact_match_review",
       "localCompany": "Paramount+",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "I Can't Save You [TV Series]",
@@ -1719,13 +1869,13 @@
       "executiveProducer": "",
       "email": "icsyproductionsmb@gmail.com",
       "phone": "",
-      "address": "",
+      "address": "Winnipeg, MB",
       "sourceType": "MASTER",
       "sources": "ICG 669 Rumour",
       "needsReview": "",
       "reviewNotes": "missing_primary_person, rumour_only",
       "localCompany": "Frantic Films & Redcloud Studios",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "My Jesus [Feature]",
@@ -1744,13 +1894,13 @@
       "executiveProducer": "",
       "email": "",
       "phone": "",
-      "address": "",
+      "address": "Winnipeg, MB",
       "sourceType": "MASTER",
       "sources": "ICG 669 Rumour",
       "needsReview": "YES",
       "reviewNotes": "missing_company, missing_primary_person, missing_schedule, rumour_only, sparse_record",
       "localCompany": "",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     },
     {
       "title": "My Life with the Walter Boys - Season 4 [New Media Series]",
@@ -1769,38 +1919,13 @@
       "executiveProducer": "",
       "email": "",
       "phone": "",
-      "address": "",
+      "address": "Calgary, AB",
       "sourceType": "MASTER",
       "sources": "ICG 669 Rumour",
       "needsReview": "",
       "reviewNotes": "missing_primary_person, missing_schedule, rumour_only",
       "localCompany": "Netflix",
-      "scrapedAt": "2026-06-01T18:36:33Z"
-    },
-    {
-      "title": "Scrubs - Season 2 [TV Series]",
-      "company": "",
-      "type": "TV Series",
-      "status": "RUMOUR",
-      "start": "",
-      "end": "",
-      "rawSchedule": "",
-      "director": "",
-      "productionManager": "",
-      "producer": "",
-      "productionCoordinator": "",
-      "unitManager": "",
-      "locationManager": "",
-      "executiveProducer": "",
-      "email": "",
-      "phone": "",
-      "address": "",
-      "sourceType": "MASTER",
-      "sources": "ICG 669 Rumour",
-      "needsReview": "YES",
-      "reviewNotes": "missing_company, missing_primary_person, missing_schedule, rumour_only, sparse_record",
-      "localCompany": "",
-      "scrapedAt": "2026-06-01T18:36:33Z"
+      "scrapedAt": "2026-06-09T17:45:35Z"
     }
   ]
 }

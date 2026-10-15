@@ -1,30 +1,32 @@
-// Lumostage Production Schedule — Service Worker
+﻿// Lumostage Production Schedule â€” Service Worker
 // Strategy: network-first for data.json (always want fresh data),
 //           cache-first for static assets (HTML, fonts, etc.)
 
-const CACHE_NAME = 'lumostage-v1';
+const CACHE_NAME = 'lumostage-v2';
 const DATA_CACHE  = 'lumostage-data-v1';
 
 const STATIC_ASSETS = [
   '/',
   '/index.html',
   '/manifest.json',
-  'https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap',
+  '/logo.jpg',
+  '/icon-192.png',
+  'https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&display=swap',
 ];
 
-// ─── INSTALL: pre-cache static shell ─────────────────────
+// â”€â”€â”€ INSTALL: pre-cache static shell â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => {
       return cache.addAll(STATIC_ASSETS).catch(err => {
-        // Non-fatal — fonts may fail in some environments
+        // Non-fatal â€” fonts may fail in some environments
         console.warn('[SW] Pre-cache partial failure:', err);
       });
     }).then(() => self.skipWaiting())
   );
 });
 
-// ─── ACTIVATE: clean old caches ──────────────────────────
+// â”€â”€â”€ ACTIVATE: clean old caches â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(keys =>
@@ -37,29 +39,29 @@ self.addEventListener('activate', event => {
   );
 });
 
-// ─── FETCH ───────────────────────────────────────────────
+// â”€â”€â”€ FETCH â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 self.addEventListener('fetch', event => {
   const url = new URL(event.request.url);
 
-  // data.json — network first, fall back to cache
+  // data.json â€” network first, fall back to cache
   if (url.pathname.endsWith('data.json')) {
     event.respondWith(networkFirstData(event.request));
     return;
   }
 
-  // Google Fonts — cache first (they rarely change)
+  // Google Fonts â€” cache first (they rarely change)
   if (url.hostname === 'fonts.googleapis.com' || url.hostname === 'fonts.gstatic.com') {
     event.respondWith(cacheFirst(event.request, CACHE_NAME));
     return;
   }
 
-  // Everything else — network first, fall back to cache
+  // Everything else â€” network first, fall back to cache
   event.respondWith(networkFirst(event.request, CACHE_NAME));
 });
 
-// ─── STRATEGIES ──────────────────────────────────────────
+// â”€â”€â”€ STRATEGIES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-// Network first → cache → offline fallback
+// Network first â†’ cache â†’ offline fallback
 async function networkFirst(request, cacheName) {
   try {
     const response = await fetch(request);
@@ -76,7 +78,7 @@ async function networkFirst(request, cacheName) {
       const fallback = await caches.match('/index.html');
       if (fallback) return fallback;
     }
-    return new Response('Offline — no cached version available.', {
+    return new Response('Offline â€” no cached version available.', {
       status: 503,
       headers: { 'Content-Type': 'text/plain' }
     });
@@ -109,7 +111,7 @@ async function networkFirstData(request) {
     return new Response(JSON.stringify({
       error: 'offline',
       productions: [],
-      updated: 'Offline — no cached data'
+      updated: 'Offline â€” no cached data'
     }), {
       status: 200,
       headers: { 'Content-Type': 'application/json' }
@@ -117,7 +119,7 @@ async function networkFirstData(request) {
   }
 }
 
-// Cache first → network (for stable assets)
+// Cache first â†’ network (for stable assets)
 async function cacheFirst(request, cacheName) {
   const cached = await caches.match(request);
   if (cached) return cached;

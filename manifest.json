@@ -1,12 +1,12 @@
-{
+﻿{
   "name": "Lumostage Production Schedule",
   "short_name": "Lumostage",
-  "description": "BC Film & TV Production Schedule — live Gantt chart and production intelligence from Creative BC, DGC, and ICG 669.",
+  "description": "BC Film & TV Production Schedule â€” live Gantt chart and production intelligence from public BC production listings.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#0d1117",
-  "theme_color": "#0060FE",
+  "background_color": "#13191A",
+  "theme_color": "#13191A",
   "orientation": "any",
   "lang": "en-CA",
   "categories": ["business", "productivity"],
@@ -38,14 +38,14 @@
       "name": "Gantt Chart",
       "short_name": "Gantt",
       "description": "View the production timeline",
-      "url": "/?view=gantt",
+      "url": "/?view=timeline",
       "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
     },
     {
-      "name": "Production Cards",
-      "short_name": "Cards",
-      "description": "Browse productions as cards",
-      "url": "/?view=cards",
+      "name": "Production List",
+      "short_name": "List",
+      "description": "Browse productions by camera date",
+      "url": "/?view=list",
       "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
     }
   ]

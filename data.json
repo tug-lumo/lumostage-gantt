@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-26 17:10 UTC",
-  "count": 43,
+  "updated": "2026-10-27 17:41 UTC",
+  "count": 42,
   "productions": [
     {
       "title": "ANAHEIM REALM - Season 1",
@@ -209,32 +209,6 @@
       "needsReview": "",
       "reviewNotes": "",
       "scrapedAt": "2026-07-07"
-    },
-    {
-      "title": "Private Eyes - West Coast - Season 2",
-      "company": "NEW PI PRODUCTIONS S2 BC INC.",
-      "type": "TV Series",
-      "status": "Active",
-      "start": "2026-07-22",
-      "end": "2026-09-29",
-      "rawSchedule": "7/22/2026 - 9/25/2026",
-      "director": "",
-      "productionManager": "James Gardiner",
-      "unitManager": "",
-      "producer": "Catou Kearney, Caroline Battista",
-      "productionCoordinator": "Brett Davies",
-      "locationManager": "Fiona Crossley",
-      "executiveProducer": "Jocelyn Hamilton, Sarah Dodd",
-      "email": "pewestcoastprodoffice@gmail.com",
-      "phone": "(778) 430-9944",
-      "address": "3964 Gordon Head Rd, Victoria, BC V8N 3X3, Canada",
-      "sourceType": "MASTER",
-      "sources": "Creative BC, ACFC West",
-      "crewList": "",
-      "submitted": false,
-      "needsReview": "",
-      "reviewNotes": "",
-      "scrapedAt": "2026-06-30"
     },
     {
       "title": "Wildflower",

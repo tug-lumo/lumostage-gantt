@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-29 19:53 UTC",
-  "count": 149,
+  "updated": "2026-10-29 19:56 UTC",
+  "count": 148,
   "productions": [
     {
       "title": "WATSON - Season 2 [TV Series]",
@@ -135,7 +135,7 @@
     {
       "title": "WILD CARDS - Season 4 [TV Series]",
       "company": "Vancon S4 Productions BC Inc.",
-      "type": "",
+      "type": "TV Series",
       "status": "Wrapped",
       "start": "2025-11-24",
       "end": "2026-03-18",
@@ -2549,32 +2549,6 @@
       "needsReview": "",
       "reviewNotes": "",
       "scrapedAt": "2026-07-29"
-    },
-    {
-      "title": "Wildflower",
-      "company": "Prime Video",
-      "type": "Series (New Media)",
-      "status": "Active",
-      "start": "2026-07-27",
-      "end": "2026-10-30",
-      "rawSchedule": "",
-      "director": "",
-      "productionManager": "Hudson Cooley",
-      "unitManager": "",
-      "producer": "Leslie Cowan",
-      "productionCoordinator": "",
-      "locationManager": "",
-      "executiveProducer": "Heidi Cole McAdams",
-      "email": "wildflower.ab2026@gmail.com",
-      "phone": "(403) 800-4864",
-      "address": "",
-      "sourceType": "MASTER",
-      "sources": "",
-      "crewList": "",
-      "submitted": false,
-      "needsReview": "",
-      "reviewNotes": "",
-      "scrapedAt": "2026-10-26"
     },
     {
       "title": "My Life with the Walter Boys - Season 4",
